@@ -1,0 +1,169 @@
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #fff1f3;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.hero-container {
+    position: relative;
+
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 40px 20px;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.home-badge {
+    display: inline-block;
+
+    background-color: #ffe4ef;
+    color: #ff4f87;
+    border-color: #ff3876;
+
+    border-radius: 30px;
+
+    padding: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: bold;
+
+    line-height: 1.1;
+
+    color: #222;
+
+    margin-bottom: 20px;
+}
+
+.title-color {
+    color: #ff4f87;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #666;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    text-decoration: none;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.main-button {
+    background-color: #ff4f87;
+    color: white;
+}
+
+.main-button:hover {
+    opacity: 0.8;
+}
+
+.outline-button {
+    border: 1px solid #ff4f87;
+    color: #ff4f87;
+    background-color: white;
+}
+
+.outline-button:hover {
+    background-color: #ff4f87;
+    color: white;
+}
+
+.hero-right {
+    width: 50%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo-background {
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background-color: #ffc2d6;
+
+    border-radius: 50%;
+}
+
+.logo {
+    position: relative;
+
+    width: 100%;
+    max-width: 700px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .button-group {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        max-width: 300px;
+    }
+}
