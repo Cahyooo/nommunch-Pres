@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { HiMiniHome, HiMiniSparkles } from "react-icons/hi2";
 
-import { RiBearSmileFill, RiInstagramFill } from "react-icons/ri";
+import { RiAdminFill, RiBearSmileFill, RiInstagramFill } from "react-icons/ri";
 
 import { MdCookie } from "react-icons/md";
 
@@ -42,6 +42,12 @@ export default function Footer() {
       icon: <RiBearSmileFill size={16} />,
       label: "Feedback",
       path: "/feedback",
+    },
+
+    {
+      icon: <RiAdminFill size={16} />,
+      label: "Admin",
+      path: "/admin",
     },
   ];
 
